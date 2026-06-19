@@ -1,2 +1,4 @@
 # 02-git-01-vcs
 123
+
+В каталоге terraform добавлен файл .gitignore, благодаря которому в репозиторий не будут попадать служебные и потенциально чувствительные файлы Terraform: локальный каталог .terraform/ с загруженными провайдерами и модулями, файлы состояния *.tfstate и *.tfstate.*, crash-логи crash.log и crash.*.log, файлы переменных *.tfvars и *.tfvars.json, которые могут содержать секретные значения, локальные override-файлы override.tf, override.tf.json, *_override.tf, *_override.tf.json, временный lock-файл .terraform.tfstate.lock.info, а также локальные CLI-конфигурации .terraformrc и terraform.rc.
